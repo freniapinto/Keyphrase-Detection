@@ -2,5 +2,5 @@ from Code import clean
 
 class TfidfApproach():
 
-    def run():
-        clean()
+    def run(self):
+        print (clean())

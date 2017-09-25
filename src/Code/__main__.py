@@ -13,7 +13,7 @@ def graph():
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    sub_parser = parser.add_subparser(help='Choose the technique to perform keyphrase detection')
+    sub_parser = parser.add_subparsers(help='Choose the technique to perform keyphrase detection')
 
     tfidf_parser = sub_parser.add_parser('tfidf',help='tfidf technique')
     tfidf_parser.set_defaults(func=tfidf)
